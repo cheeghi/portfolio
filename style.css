@@ -1,0 +1,174 @@
+/* Common */
+* {
+    margin: 0;
+    padding: 0;
+    /*border: 1px red solid;*/
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.section {
+    height: 100vh;
+    width: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(1rem);
+    }
+}
+
+@keyframes BorderChange {
+    0%, 100% {
+        background: #fff;
+    }
+    50% {
+        background: #bcbcbc;
+    }
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: #bcbcbc;
+    transition: color 0.3s;
+}
+
+.navbar .main-nav li {
+    margin: 0 15px;
+}
+
+.navbar .social-nav {
+    position: absolute;
+    left: 5px;
+}
+
+.navbar .social-nav li {
+    margin: 0 8px;
+}
+
+.navbar > a {
+    position: absolute;
+    right: 15px;
+}
+
+/* Home */
+#home .background {
+    width: 100%;
+    height: 100%;
+    background: url("img/home.jpg") no-repeat center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+#home .content {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+
+#home .content h1 {
+    font-size: 3rem;
+    transition: opacity 0.5s;
+    margin-bottom: 15px;
+}
+
+#home .content p {
+    font-size: 1.3rem;
+}
+
+#home .arrow-down {
+    position: absolute;
+    bottom: 1.2rem;
+    left: 50%;
+    font-size: 2rem;
+    color: #000;
+    animation: MoveUpDown 1.2s linear infinite;
+}
+
+/* Experiences */
+.timeline {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 130px;
+    padding-bottom: 30px;
+}
+
+.timeline .step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.timeline .step .circle {
+    display: inline-block;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    /*border: 2px solid #333;*/
+    animation: BorderChange 1.5s linear infinite;
+}
+
+.timeline .line {
+    height: 120px;
+    width: 1px;
+    border: 1px solid #bcbcbc;
+    background: #bcbcbc;
+    margin: 30px auto;
+}
+
+.timeline .step .year-right {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.timeline .step .year-left {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
