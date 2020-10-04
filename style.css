@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     /*border: 1px red solid;*/
 }
 
@@ -129,11 +130,18 @@ body {
 
 /* Experiences */
 .timeline {
+    height: 100%;
     width: 60%;
     margin: auto;
     text-align: center;
     padding-top: 130px;
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline > * {
+    flex-grow: 1;
 }
 
 .timeline .step {
@@ -141,7 +149,6 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    cursor: pointer;
 }
 
 .timeline .step .circle {
@@ -152,10 +159,14 @@ body {
     background: #fff;
     /*border: 2px solid #333;*/
     animation: BorderChange 1.5s linear infinite;
+    cursor: pointer;
+}
+
+.timeline .step .circle .tooltip {
+    display: none;
 }
 
 .timeline .line {
-    height: 120px;
     width: 1px;
     border: 1px solid #bcbcbc;
     background: #bcbcbc;
