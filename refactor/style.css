@@ -1,0 +1,231 @@
+:root {
+    --grey-200: #e0e0e0;
+    --grey-300: #bcbcbc;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.debug, .debug * {
+    border: 1px solid red;
+}
+
+body {
+    font-family: 'Alef', sans-serif;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.height-60 {
+    height: 60px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-half {
+    width: 50%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.h-screen {
+    height: 100vh;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-full-space > * {
+    flex: 1;
+}
+
+.justify-space-btw {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-transp-black {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.bg-grey-200 {
+    background: var(--grey-200);
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.hover-grey-300:hover {
+    color: var(--grey-300);
+    transition: color 0.3s;
+}
+
+.mx-16 {
+    margin: 0 16px;
+}
+
+.mx-8 {
+    margin: 0 8px;
+}
+
+.left-5 {
+    left: 5px;
+}
+
+.right-15 {
+    right: 15px;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.left-0 {
+    left: 0;
+}
+
+.bottom-24 {
+    bottom: 24px;
+}
+
+.opacity-7 {
+    opacity: 0.7;
+}
+
+.z--1 {
+    z-index: -1;
+}
+
+.bg-img-home {
+    background: url("img/home.jpg") no-repeat center/cover;
+}
+
+.container {
+    width: 55%;
+    height: 100%;
+    margin: auto;
+}
+
+.block {
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-size-2rem {
+    font-size: 2rem;
+}
+
+.font-size-3rem {
+    font-size: 3rem;
+}
+
+.text-black {
+    color: #000;
+}
+
+.move-up-and-down {
+    animation: MoveUpDown 1.2s linear infinite;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(1rem);
+    }
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.mt-64 {
+    margin-top: 64px;
+}
+
+@media (max-width: 680px) {
+
+    .hidden-sm {
+        display: none;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+}
+
+.scroll-smooth {
+    scroll-behavior: smooth;
+}
+
+.pt-70 {
+    padding-top: 70px;
+}
+
+.relative {
+    position: relative;
+}
+
+.w-8 {
+    width: 8px;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.ml-3 {
+    margin-left: 3px;
+}
+
+.min-h-120 {
+    min-height: 120px;
+}
