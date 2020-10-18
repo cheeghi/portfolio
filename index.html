@@ -1,78 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth h-full">
 <head>
   <meta charset="UTF-8">
-  <title>Michele Righetti</title>
+  <title>Michele Righetti - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class=" h-full">
 
-<nav class="navbar">
-  <ul class="social-nav">
-    <li><a target="_blank" href="https://github.com/cheeghi"><i class="fab fa-github fa-2x"></i></a></li>
-    <li><a target="_blank" href="https://www.linkedin.com/in/michelerighetti1998/"><i class="fab fa-linkedin fa-2x"></i></a>
+<nav class="fixed h-60 w-full bg-transp-black flex items-center">
+  <ul class="list-style-none flex absolute left-5">
+    <li class="mx-8"><a class="text-decoration-none text-white hover-grey-300" target="_blank"
+                        href="https://github.com/cheeghi"><i class="fab fa-github fa-2x"></i></a></li>
+    <li class="mx-8"><a class="text-decoration-none text-white hover-grey-300" target="_blank"
+                        href="https://www.linkedin.com/in/michelerighetti1998/"><i class="fab fa-linkedin fa-2x"></i></a>
     </li>
   </ul>
-  <ul class="main-nav">
-    <li><a href="#home">HOME</a></li>
-    <li><a href="#experiences">ESPERIENZE</a></li>
-    <li><a href="#skills">COMPETENZE</a></li>
-    <li><a href="#projects">PROGETTI</a></li>
+  <ul class="list-style-none flex sm:hidden">
+    <li class="mx-16"><a class="text-decoration-none text-white hover-grey-300" href="#home">HOME</a></li>
+    <li class="mx-16"><a class="text-decoration-none text-white hover-grey-300" href="#experiences">ESPERIENZE</a>
+    </li>
+    <li class="mx-16"><a class="text-decoration-none text-white hover-grey-300" href="#skills">COMPETENZE</a></li>
+    <li class="mx-16"><a class="text-decoration-none text-white hover-grey-300" href="#projects">PROGETTI</a></li>
   </ul>
-  <a href="#">ENG</a>
+  <a class="absolute text-decoration-none text-white hover-grey-300 right-15" href="#">ENG</a>
 </nav>
 
-<!-- Home -->
-<section class="section flex" id="home">
-  <div class="background"></div>
-  <div class="container content">
-    <h1>Michele Righetti</h1>
-    <p>Ciao, sono uno sviluppatore web e questo è il mio sito portfolio</p>
+<section class="h-full" id="home">
+  <div class="w-full h-full absolute top-0 left-0 opacity-7 z--1 bg-img-home"></div>
+  <div class="container flex items-center flex-column">
+    <h1 class="text-center">Michele Righetti</h1>
+    <p class="mt-8 text-center">Ciao, sono uno sviluppatore web e questo è il mio sito portfolio</p>
   </div>
-  <a class="arrow-down" href="#experiences"><i class="fas fa-caret-down"></i></a>
+  <a class="absolute bottom-24 w-full text-center font-size-2rem text-black move-up-and-down" href="#experiences"><i
+          class="fas fa-caret-down"></i></a>
 </section>
 
-<!-- Experiences -->
-<section class="section" id="experiences">
-  <div class="container content">
-    <h1 class="text-center">Formazione & Lavoro</h1>
-    <ul class="h-full flex items-center mt-64 flex-column flex-full-space">
-      <li>
-        <div class="flex items-center">
-          <i class="fas fa-graduation-cap"></i>
-          <span class="ml-8">2016/2017</span>
-        </div>
-        <h4 class="mt-8 text-center">Stage presso CAD IT come sviluppatore</h4>
-        <p class="text-center mt-8">Sviluppo di applicazione finanziare con le tecnologie JavaEESviluppo di applicazione
-          finanziare con le tecnologie JavaEESviluppo di applicazione finanziare con le tecnologie JavaEESviluppo di
-          applicazione finanziare con le tecnologie JavaEESviluppo di applicazione finanziare con le tecnologie
-          JavaEE</p>
-      </li>
-      <li class="mt-32">
-        <div class="flex items-center">
-          <i class="fas fa-graduation-cap"></i>
-          <span class="ml-8">2017</span>
-        </div>
-        <h4 class="mt-8 text-center">Diploma di informatica presso ITIS G.Marconi (VR), Italia</h4>
-        <p class="text-center">Diploma di informatica presso ITIS G.Marconi (VR), ItaliaDiploma di informatica presso
-          ITIS G.Marconi (VR), ItaliaDiploma di informatica presso ITIS G.Marconi (VR), ItaliaDiploma di informatica
-          presso ITIS G.Marconi (VR), ItaliaDiploma di informatica presso ITIS G.Marconi (VR), Italia</p>
-      </li>
-      <li class="mt-32">
-        <div class="flex items-center">
-          <i class="fas fa-briefcase"></i>
-          <span class="ml-8">Da luglio 2017</span>
-        </div>
-        <h4 class="mt-8 text-center">Sviluppatore backend presso CAD IT</h4>
-        <p class="text-center">Sviluppo di framework basato su JavaEESviluppo di framework basato su JavaEESviluppo di
-          framework basato su JavaEESviluppo di framework basato su JavaEESviluppo di framework basato su JavaEESviluppo
-          di framework basato su JavaEE</p>
-      </li>
-    </ul>
+<section class="h-full" id="experiences">
+  <div class="container h-full">
+    <h1 class="text-center pt-80">Formazione & Lavoro</h1>
+    <div class="flex mt-64 mb-16">
+      <div class="w-8 bg-grey-200"></div>
+      <ul class="list-style-none lg:ml-32 h-full">
+        <li class="min-h-120 h-full flex">
+          <div class="h-full w-120 bold br-grey-200 flex flex-column items-center pr-8">
+            <i class="fas fa-briefcase fa-2x text-grey-400 mb-8"></i>
+            2016/2017
+          </div>
+          <div class="pl-8">
+            <h4>Stage presso CAD IT</h4>
+            <p class="mt-8">Sviluppo di applicazione finanziare con utilizzo delle tecnologie JavaEE, HTML5, CSS3, TypeScript</p>
+          </div>
+        </li>
+        <li class="min-h-120 h-full flex mt-64">
+          <div class="h-full w-120 bold br-grey-200 flex flex-column items-center pr-8">
+            <i class="fas fa-graduation-cap fa-2x text-grey-400 mb-8"></i>
+            2017
+          </div>
+          <div class="pl-8">
+            <h4>Diploma informatica presso ITIS G. Marconi (VR), Italia</h4>
+            <p class="mt-8">Voto 90/100</p>
+          </div>
+        </li>
+        <li class="min-h-120 h-full flex mt-64">
+          <div class="h-full w-120 bold br-grey-200 flex flex-column items-center pr-8">
+            <i class="fas fa-briefcase fa-2x text-grey-400 mb-8"></i>
+            Da Luglio 2017
+          </div>
+          <div class="pl-8">
+            <h4>Backend developer presso CAD IT</h4>
+            <p class="mt-8"></p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
 
