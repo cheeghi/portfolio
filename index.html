@@ -6,12 +6,13 @@
   <title>Michele Righetti - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class=" h-full">
 
+<!-- TODO: li con transparency (rgba) e quello selezionato senza alpha -->
 <nav class="fixed h-60 w-full bg-transp-black flex items-center z-10">
   <ul class="list-style-none flex absolute left-5">
     <li class="mx-8"><a class="text-decoration-none text-white hover-grey-300" target="_blank"
@@ -36,12 +37,13 @@
   <div class="container flex items-center flex-column text-center">
     <h1 class="font-size-3rem">Michele Righetti</h1>
     <p class="mt-8">Ciao, ho 22 anni e sono uno sviluppatore web. Vivo a Verona (Italia)</p>
-    <p class="mt-32">Puoi contattarmi qui: <span class="bold">michele.righetti1998@gmail.com</span></p>
+    <p class="mt-32">Puoi contattarmi qui: <span class="bold"><a href="mailto:michele.righetti1998@gmail.com" class="text-black text-decoration-none">michele.righetti1998@gmail.com</a></span></p>
   </div>
   <a class="absolute bottom-24 w-full text-center font-size-2rem text-black move-up-and-down" href="#experiences"><i
-          class="fas fa-caret-down"></i></a>
+          class="fas fa-angle-down"></i></a>
 </section>
 
+<!-- todo: card con accordion -->
 <section class="min-h-full" id="experiences">
   <div class="container h-full">
     <h1 class="text-center pt-80">Formazione & Lavoro</h1>
@@ -95,6 +97,8 @@
 
 <section class="min-h-full bg-grey-100" id="skills">
   <div class="container pt-80 pb-20">
+    <!-- todo: box-shadow: 0 0 12px 2px rgba(0,0,0,.15) -->
+    <!-- todo: icona grande con titolo sotto -->
     <h1 class="text-center">Competenze</h1>
     <div class="grid lg:grid-3col md:grid-2col mt-32 grid-gap-20 relative">
       <div class="min-h-256 min-w-256 bg-white radius-5">
@@ -139,14 +143,15 @@
         <p class="mt-8 px-4 text-center">Conoscenza base di frontend development. Questo sito portfolio è stato
           realizzato
           da me senza uso di librerie. <a href="https://github.com/cheeghi/portfolio" target="_blank"
-                                           class="text-decoration-none bold text-black text-underline">Qui</a> i
+                                          class="text-decoration-none bold text-black text-underline">Qui</a> i
           sorgenti.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="min-h-full" id="projects">
+<!--todo: usare classi o mettere weasy-->
+<section style="min-height: 70%" class="" id="projects">
   <div class="container pt-80 pb-20">
     <h1 class="text-center">Progetti</h1>
     <ul class="list-style-none mt-64">
@@ -173,7 +178,8 @@
              class="text-decoration-none bold text-black text-underline block"
              href="https://www.instagram.com/sheriffo.bot/">Instagram</a>
           <a target="_blank"
-             class="text-decoration-none bold text-black text-underline block" href="https://t.me/SheriffoBot">Telegram</a>
+             class="text-decoration-none bold text-black text-underline block"
+             href="https://t.me/SheriffoBot">Telegram</a>
         </div>
       </li>
     </ul>
