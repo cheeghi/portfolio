@@ -89,9 +89,13 @@ body {
     justify-content: space-between;
 }
 
-.items-center {
+.align-justify-center {
     align-items: center;
     justify-content: center;
+}
+
+.items-center {
+    align-items: center;
 }
 
 .justify-center {
@@ -189,6 +193,10 @@ body {
     font-size: 2rem;
 }
 
+.font-size-1\.5rem {
+    font-size: 1.5rem;
+}
+
 .font-size-3rem {
     font-size: 3rem;
 }
@@ -214,12 +222,29 @@ body {
     margin-top: 8px;
 }
 
+.mt-16 {
+    margin-top: 16px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
 .mt-32 {
     margin-top: 32px;
 }
 
+.mt-48 {
+    margin-top: 48px;
+}
+
 .mt-64 {
     margin-top: 64px;
+}
+
+.size-128x128 {
+    height: 128px;
+    width: 128px;
 }
 
 @media (max-width: 680px) {
@@ -242,6 +267,10 @@ body {
 
     .sm\:mt-16 {
         margin-top: 16px;
+    }
+
+    .sm\:overflow-scroll {
+        overflow: auto;
     }
 
 }
@@ -278,6 +307,10 @@ body {
     width: 16px;
 }
 
+.w-1 {
+    width: 1px;
+}
+
 .ml-auto {
     margin-left: auto;
 }
@@ -286,12 +319,24 @@ body {
     margin-left: 3px;
 }
 
+.ml-8 {
+    margin-left: 8px;
+}
+
 .ml-16 {
     margin-left: 16px;
 }
 
 .ml-32 {
     margin-left: 32px;
+}
+
+.ml-80 {
+    margin-left: 80px;
+}
+
+.ml-115 {
+    margin-left: 115px;
 }
 
 .mb-32 {
@@ -310,12 +355,20 @@ body {
     min-height: 120px;
 }
 
+.min-h-100 {
+    min-height: 100px;
+}
+
 .min-h-256 {
     min-height: 256px;
 }
 
 .min-w-256 {
     min-width: 256px;
+}
+
+.min-w-80 {
+    min-width: 80px;
 }
 
 .h-120 {
@@ -370,8 +423,20 @@ body {
     margin-right: 8px;
 }
 
+.mr-16 {
+    margin-right: 16px;
+}
+
+.mr-32 {
+    margin-right: 32px;
+}
+
 .pr-8 {
     padding-right: 8px;
+}
+
+.pr-16 {
+    padding-right: 16px;
 }
 
 .pl-8 {
@@ -398,13 +463,20 @@ body {
     }
 }
 
-.grid-gap-20 {
-    grid-gap: 20px;
+.grid-gap-40 {
+    grid-gap: 40px;
 }
 
 .radius-5 {
     border-radius: 5px;
-    box-shadow: 0 0 5px var(--grey-400);
+}
+
+.shadow-sm {
+    box-shadow: 0 0 6px 1px rgba(0,0,0,.15);
+}
+
+.shadow-md {
+    box-shadow: 0 0 12px 2px rgba(0,0,0,.15);
 }
 
 .px-4 {
@@ -413,6 +485,10 @@ body {
 
 .pb-20 {
     padding-bottom: 20px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
 }
 
 .text-orange-400 {
@@ -431,6 +507,35 @@ body {
     padding-top: 20px;
 }
 
+.px-20 {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
 .text-underline {
     text-decoration: underline;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.h-0 {
+    height: 0;
+}
+
+.min-h-0 {
+    min-height: 0;
+}
+
+.card-description {
+    transition: min-height 0.5s ease-out;
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }

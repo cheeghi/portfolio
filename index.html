@@ -12,8 +12,8 @@
 </head>
 <body class=" h-full">
 
-<!-- TODO: li con transparency (rgba) e quello selezionato senza alpha -->
-<nav class="fixed h-60 w-full bg-transp-black flex items-center z-10">
+<!-- TODO: evidenziare la sezione in cui si è -->
+<nav class="fixed h-60 w-full bg-transp-black flex align-justify-center z-10">
   <ul class="list-style-none flex absolute left-5">
     <li class="mx-8"><a class="text-decoration-none text-white hover-grey-300" target="_blank"
                         href="https://github.com/cheeghi"><i class="fab fa-github fa-2x"></i></a></li>
@@ -22,7 +22,7 @@
             class="fab fa-linkedin fa-2x"></i></a>
     </li>
   </ul>
-  <ul class="list-style-none flex sm:hidden">
+  <ul class="nav-sections list-style-none flex sm:hidden">
     <li class="mx-16"><a class="text-decoration-none text-white hover-grey-300" href="#home">HOME</a></li>
     <li class="mx-16"><a class="text-decoration-none text-white hover-grey-300" href="#experiences">ESPERIENZE</a>
     </li>
@@ -34,152 +34,170 @@
 
 <section class="h-full" id="home">
   <div class="w-full h-full absolute top-0 left-0 opacity-7 z--1 bg-img-home"></div>
-  <div class="container flex items-center flex-column text-center">
+  <div class="container flex align-justify-center flex-column text-center">
     <h1 class="font-size-3rem">Michele Righetti</h1>
     <p class="mt-8">Ciao, ho 22 anni e sono uno sviluppatore web. Vivo a Verona (Italia)</p>
-    <p class="mt-32">Puoi contattarmi qui: <span class="bold"><a href="mailto:michele.righetti1998@gmail.com" class="text-black text-decoration-none">michele.righetti1998@gmail.com</a></span></p>
+    <p class="mt-32">Puoi contattarmi qui: <span class="bold"><a href="mailto:michele.righetti1998@gmail.com"
+                                                                 class="text-black text-decoration-none">michele.righetti1998@gmail.com</a></span>
+    </p>
   </div>
   <a class="absolute bottom-24 w-full text-center font-size-2rem text-black move-up-and-down" href="#experiences"><i
           class="fas fa-angle-down"></i></a>
 </section>
 
-<!-- todo: card con accordion -->
-<section class="min-h-full" id="experiences">
+<section class=" min-h-full" id="experiences">
   <div class="container h-full">
     <h1 class="text-center pt-80">Formazione & Lavoro</h1>
-    <div class="flex mt-64 mb-16">
-      <div class="w-16 bg-grey-200"></div>
-      <ul class="list-style-none lg:ml-32 h-full">
-        <li class="min-h-120 h-full flex sm:flex-column sm:text-center">
-          <div class="h-full w-120 bold flex flex-column items-center pr-8">
-            <i class="fas fa-briefcase fa-2x text-blue-400 mb-8"></i>
-            2016/2017
-          </div>
-          <div class="pl-8 lg:bl-grey-200 sm:mt-16">
-            <h4>Stage presso CAD IT</h4>
-            <p class="mt-8">Durante la quarta e quinta superiore ho fatto uno stage presso l'azienda <a
-                    class="text-decoration-none text-black bold text-underline" target="_blank"
-                    href="https://www.cadit.it/">CAD IT</a>.
-              Durante l'esperienza ho sviluppato applicazioni finanziarie con l'utilizzo di tecnologie quali JavaEE,
-              Git, HTML5, CSS3, JS.</p>
-          </div>
-        </li>
-        <li class="min-h-120 h-full flex mt-64 sm:flex-column sm:text-center">
-          <div class="h-full w-120 bold flex flex-column items-center pr-8">
-            <i class="fas fa-graduation-cap fa-2x text-green-400 mb-8"></i>
-            2017
-          </div>
-          <div class="pl-8 lg:bl-grey-200 sm:mt-16">
-            <h4>Diploma informatica 90/100</h4>
-            <p class="mt-8">Presso <span class="bold">ITIS G. Marconi</span>, Verona (Italia). Durante il periodo
-              scolastico
-              ho anche fatto ripetizioni verso studenti delle classi prime.</p>
-          </div>
-        </li>
-        <li class="min-h-120 h-full flex mt-64 sm:flex-column sm:text-center">
-          <div class="h-full w-120 bold flex flex-column items-center pr-8">
-            <i class="fas fa-briefcase fa-2x text-blue-400 mb-8"></i>
-            Da Luglio 2017
-          </div>
-          <div class="pl-8 lg:bl-grey-200 sm:mt-16">
-            <h4>Backend developer presso CAD IT</h4>
-            <p class="mt-8">Sviluppo di framework e applicazioni web basate su tecnologia JavaEE. Ho quindi una buona
-              conoscenza
-              di Maven, Hibernate, CDI, EJB, servizi rest JAX-RS, principali Application Server (Websphere, JBoss,
-              Tomcat), progettazione
-              e interrogazione di database Oracle e SQLServer.</p>
-          </div>
-        </li>
-      </ul>
+    <div class="card b-grey-200 radius-5 mt-64 shadow-sm">
+      <div class="cursor-pointer min-h-120 flex items-center">
+        <div class="flex flex-column align-justify-center bold ml-16 h-full min-w-80">
+          <i class="fas fa-briefcase fa-2x text-grey-400 mb-8"></i>2016/2017
+        </div>
+        <div class="min-h-100 ml-8 bg-grey-100 w-1"></div>
+        <div>
+          <p class="bold ml-8">Stage presso CAD IT</p>
+        </div>
+        <i class="ml-auto mr-32 fas fa-angle-right text-black font-size-1.5rem"></i>
+      </div>
+      <div class="card-description h-0 min-h-0 hidden flex flex-column justify-center">
+        <p class="ml-115 pb-20 pr-16 sm:overflow-scroll">Durante l'esperienza ho sviluppato applicazioni finanziarie con l'utilizzo di
+          tecnologie quali JavaEE,
+          Git, HTML5, CSS3, JS.</p>
+      </div>
+    </div>
+    <div class="card b-grey-200 radius-5 mt-32 shadow-sm">
+      <div class="cursor-pointer min-h-120 flex items-center">
+        <div class="flex flex-column align-justify-center bold ml-16 h-full min-w-80">
+          <i class="fas fa-graduation-cap fa-2x text-green-400 mb-8"></i>2017
+        </div>
+        <div class="min-h-100 ml-8 bg-grey-100 w-1"></div>
+        <div>
+          <p class="bold ml-8">Diploma Informatica</p>
+        </div>
+        <i class="ml-auto mr-32 fas fa-angle-right text-black font-size-1.5rem"></i>
+      </div>
+      <div class="card-description h-0 min-h-0 hidden flex flex-column justify-center">
+        <p class="ml-115 pb-20 pr-16 sm:overflow-scroll">Presso <span class="bold">ITIS G. Marconi</span>, Verona (Italia). Durante il
+          periodo scolastico ho anche fatto ripetizioni verso studenti delle classi prime.</p>
+      </div>
+    </div>
+    <div class="card b-grey-200 radius-5 mt-32 shadow-sm">
+      <div class="cursor-pointer min-h-120 flex items-center">
+        <div class="flex flex-column align-justify-center bold ml-16 h-full min-w-80">
+          <i class="fas fa-briefcase fa-2x text-grey-400 mb-8"></i>Da 2017
+        </div>
+        <div class="min-h-100 ml-8 bg-grey-100 w-1"></div>
+        <div>
+          <p class="bold ml-8">Backend Developer presso CAD IT</p>
+        </div>
+        <i class="ml-auto mr-32 fas fa-angle-right text-black font-size-1.5rem"></i>
+      </div>
+      <div class="card-description h-0 min-h-0 hidden flex flex-column justify-center">
+        <p class="ml-115 pb-20 pr-16 sm:overflow-scroll">Sviluppo di framework e applicazioni web basate su tecnologia JavaEE. Ho quindi
+          una buona
+          conoscenza di Maven, Hibernate, CDI, EJB, servizi rest JAX-RS, principali Application Server (Websphere,
+          JBoss, Tomcat), progettazione e interrogazione di database Oracle e SQLServer.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="min-h-full bg-grey-100" id="skills">
-  <div class="container pt-80 pb-20">
-    <!-- todo: box-shadow: 0 0 12px 2px rgba(0,0,0,.15) -->
-    <!-- todo: icona grande con titolo sotto -->
+  <div class="container pt-80 pb-50">
     <h1 class="text-center">Competenze</h1>
-    <div class="grid lg:grid-3col md:grid-2col mt-32 grid-gap-20 relative">
-      <div class="min-h-256 min-w-256 bg-white radius-5">
-        <h4 class="text-center mt-8"><i class="fas fa-database mr-8 text-blue-400"></i>Database</h4>
+    <div class="grid lg:grid-3col md:grid-2col mt-48 grid-gap-40 relative">
+      <div class="min-h-256 min-w-256 bg-white radius-5 shadow-md pt-20 px-20">
+        <i class="fas fa-database mr-8 text-blue-400 w-full text-center fa-5x"></i>
+        <h3 class="text-center mt-24">DATABASE</h3>
         <p class="mt-8 px-4 text-center">Progettazione e interrogazione di database relazionali, principalmente MySQL e
           Oracle</p>
       </div>
-      <div class="min-h-256 min-w-256 bg-white radius-5">
-        <h4 class="text-center mt-8"><i class="fab fa-java mr-8 text-orange-400"></i>JavaEE</h4>
+      <div class="min-h-256 min-w-256 bg-white radius-5 shadow-md pt-20 pb-20 px-20">
+        <i class="fab fa-java mr-8 text-orange-400 w-full text-center fa-5x"></i>
+        <h3 class="text-center mt-24">JAVA EE</h3>
         <p class="mt-8 px-4 text-center">Sviluppo di webapp con principali tecnologie Java Enterprise, quali: Hibernate,
-          CDI, JAX-RS, EJB con conseguente conoscenza dei principali Application Server Java (Websphere, JBoss,
-          Tomcat). Ottima conoscenza di Maven.</p>
+          CDI, JAX-RS, EJB, Maven</p>
       </div>
-      <div class="min-h-256 min-w-256 bg-white radius-5">
-        <h4 class="text-center mt-8"><i class="fab fa-git-alt mr-8 text-orange-400"></i>Git</h4>
+      <div class="min-h-256 min-w-256 bg-white radius-5 shadow-md pt-20 pb-20 px-20">
+        <i class="fab fa-git-alt mr-8 text-orange-400 w-full text-center fa-5x"></i>
+        <h3 class="text-center mt-24">GIT</h3>
         <p class="mt-8 px-4 text-center">Ottima conoscenza del sistema di software versioning Git</p>
       </div>
-      <div class="min-h-256 min-w-256 bg-white radius-5">
-        <h4 class="text-center mt-8"><i class="fab fa-linux mr-8"></i>Linux</h4>
+      <div class="min-h-256 min-w-256 bg-white radius-5 shadow-md pt-20 pb-20 px-20">
+        <i class="fab fa-linux mr-8 fa-5x w-full text-center"></i>
+        <h3 class="text-center mt-24">LINUX</h3>
         <p class="mt-8 px-4 text-center">Buona conoscenza del sistema operativo Linux: principali comandi bash per
           installare e configurare applicazioni</p>
       </div>
-      <div class="min-h-256 min-w-256 bg-white radius-5">
-        <h4 class="text-center mt-8"><i class="fab fa-docker mr-8 text-blue-100"></i>Docker</h4>
+      <div class="min-h-256 min-w-256 bg-white radius-5 shadow-md pt-20 pb-20 px-20">
+        <i class="fab fa-docker mr-8 text-blue-100 w-full text-center fa-5x"></i>
+        <h3 class="text-center mt-24">DOCKER</h3>
         <p class="mt-8 px-4 text-center">Build e run di immagini docker, configurazione di più container che comunicano
           tra di loro</p>
       </div>
-      <div class="min-h-256 min-w-256 bg-white radius-5">
-        <h4 class="text-center mt-8"><i class="fab fa-php mr-8 text-blue-400"></i>PHP</h4>
+      <div class="min-h-256 min-w-256 bg-white radius-5 shadow-md pb-20 pt-20 px-20">
+        <i class="fab fa-php mr-8 text-blue-400 w-full text-center fa-5x"></i>
+        <h3 class="text-center mt-24">PHP</h3>
         <p class="mt-8 px-4 text-center">Linguaggio che solitamente uso per progetti personali, ottima conoscenza del
           framework <a href="http://www.slimframework.com/" target="_blank"
-                       class="text-decoration-none bold text-black text-underline">Slim</a> per la creazione di API Rest
+                       class="text-decoration-none bold text-black">Slim</a> per la creazione di API Rest
         </p>
       </div>
-      <div class="min-h-256 min-w-256 bg-white radius-5">
-        <h4 class="text-center mt-8">NGINX</h4>
+      <div class="min-h-256 min-w-256 bg-white radius-5 shadow-md pt-20 pb-20 px-20">
+        <i class="fas fa-server mr-8 text-green-400 w-full text-center fa-5x"></i><h4 class="text-center mt-24">
+        NGINX</h4>
         <p class="mt-8 px-4 text-center">Webserver che solitamente utilizzo con PHP nei progetti personali, conosco le
           configurazioni base</p>
       </div>
-      <div class="min-h-256 min-w-256 bg-white radius-5">
-        <h4 class="text-center mt-8">HTML5/CSS3/JS</h4>
+      <div class="min-h-256 min-w-256 bg-white radius-5 shadow-md pt-20 pb-20 px-20">
+        <i class="fab fa-html5 mr-8 text-orange-400 w-full text-center fa-5x"></i>
+        <h3 class="text-center mt-24">HTML5/CSS3/JS</h3>
         <p class="mt-8 px-4 text-center">Conoscenza base di frontend development. Questo sito portfolio è stato
           realizzato
           da me senza uso di librerie. <a href="https://github.com/cheeghi/portfolio" target="_blank"
-                                          class="text-decoration-none bold text-black text-underline">Qui</a> i
-          sorgenti.</p>
+                                          class="text-decoration-none bold text-black">Qui</a> i
+          sorgenti</p>
       </div>
     </div>
   </div>
 </section>
 
-<!--todo: usare classi o mettere weasy-->
-<section style="min-height: 70%" class="" id="projects">
+<section class="min-h-full" id="projects">
   <div class="container pt-80 pb-20">
     <h1 class="text-center">Progetti</h1>
     <ul class="list-style-none mt-64">
       <li class="flex pb-20 pt-20 bt-grey-200">
-        <img style="width: 128px; height: 128px" src="img/zanzara_logo.png">
+        <img class="size-128x128" src="img/zanzara_logo.png">
         <div class="ml-16">
-          <h4>Zanzara</h4>
+          <h3>Zanzara</h3>
           <p class="mt-8 mb-8">Framework per sviluppare Bot Telegram in Asynchronous PHP.</p>
           <p>Sorgenti su <a target="_blank"
-                            class="text-decoration-none bold text-black text-underline"
+                            class="text-decoration-none bold text-black"
                             href="https://github.com/badfarm/zanzara">Github</a>.
           </p>
         </div>
       </li>
       <li class="flex pt-20 pb-20 bt-grey-200 bb-grey-200">
-        <img style="width: 128px; height: 128px" src="img/sheriffobot_logo.png">
+        <img class="size-128x128" src="img/sheriffobot_logo.png">
         <div class="ml-16">
-          <h4>SheriffoBot</h4>
+          <h3>SheriffoBot</h3>
           <p class="mt-8 mb-8">Bot Telegram per la gestione delle multe delle squadre di calcio. Stack: ReactPHP, MySQL,
             NGINX.</p>
           <a target="_blank"
-             class="text-decoration-none bold text-black text-underline" href="https://www.sheriffobot.it">Sito Web</a>
+             class="text-decoration-none bold text-black" href="https://www.sheriffobot.it">sheriffobot.it</a>
           <a target="_blank"
-             class="text-decoration-none bold text-black text-underline block"
-             href="https://www.instagram.com/sheriffo.bot/">Instagram</a>
+             class="text-decoration-none bold text-black text-underline ml-8"
+             href="https://www.instagram.com/sheriffo.bot/"><i class="fab fa-instagram"></i></a>
           <a target="_blank"
-             class="text-decoration-none bold text-black text-underline block"
-             href="https://t.me/SheriffoBot">Telegram</a>
+             class="text-decoration-none bold text-black text-underline ml-8"
+             href="https://t.me/SheriffoBot"><i class="fab fa-telegram-plane"></i></a>
+        </div>
+      </li>
+      <li class="flex pt-20 pb-20">
+        <img class="size-128x128" src="img/weasygoal.svg">
+        <div class="ml-16">
+          <h3>WeasyGoal</h3>
+          <p class="mt-8 mb-8">Gestionale per squadre di calcio. Stack: PHP (Slim framework), ReactJS, NGINX, MySQL.</p>
         </div>
       </li>
     </ul>
@@ -190,5 +208,6 @@
   <p class="text-center pt-8">Michele Righetti &copy; 2020</p>
 </footer>
 
+<script src="main.js"></script>
 </body>
 </html>
