@@ -411,6 +411,10 @@ body {
     color: var(--grey-400);
 }
 
+.text-grey-300 {
+    color: var(--grey-300);
+}
+
 .text-blue-400 {
     color: var(--blue-400);
 }
@@ -538,4 +542,12 @@ body {
 
 .overflow-hidden {
     overflow: hidden;
+}
+
+.arrow {
+    transition: transform 0.5s;
+}
+
+.transition-color-0\.3s {
+    transition: color 0.3s;
 }
